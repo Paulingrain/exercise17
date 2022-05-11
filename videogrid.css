@@ -1,0 +1,149 @@
+.main-video-grid{
+    margin-left: 60px;
+    margin-top: 45px;
+    margin-right: 5px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 16px;  
+    padding: 25px;
+    overflow-x: hidden;
+}
+
+.video-grid-div{
+   
+   padding: 4px;
+}
+
+@media (max-width:750px){
+    .main-video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+.thumbnail{
+    width:100%;
+  
+}
+
+.channel-writeup{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    
+}
+
+.chanel-picture-div{
+    margin-top: 15px;
+   margin-right: 15px;
+}
+.youtube-writeup{
+    margin-left:12px;
+  
+}
+.channel-picture{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius:25px;
+}
+
+.talking{
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 8px;
+    font-family: roboto, arial;
+    font-size: 14px;
+    width: 250px;
+}
+
+.marques{
+    font-size: 14px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    color: rgb(122, 121, 121);
+    
+}
+.views{
+    font-size: 14px;
+    padding-bottom: 0%;
+    color: rgb(122, 121, 121);
+    margin-top: 0%;
+}
+
+@media (min-width:1000px) {
+    .talking{
+       font-size: 16px;
+       line-height: 24px;
+    }
+}
+
+@media (min-width:1000px) {
+    .marques, .views{
+       font-size: 14px;
+       line-height: 24px;
+    }
+}
+
+.video-grid-image{
+    position: relative;
+    
+}
+
+.video-time{
+background-color: black;
+color: white;
+position: absolute;
+right: 0;
+bottom:8px;
+font-size: 12px;
+padding: 3px;
+font-weight: bold;
+border-radius: 3px;
+}
+
+.chanel-picture-div{
+    display: inline-block;
+    position: relative;
+}
+
+.toolip-channel{
+    background-color: white;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 6px;
+    border: none;
+    padding: 6px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5) ;
+    opacity:0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.chanel-picture-div:hover .toolip-channel{
+    opacity: 1;
+}
+
+.toolip-channel-picture{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius:25px;
+    margin-right: 5px; 
+    margin-left: 5px; 
+}
+
+.toolip-name{
+    font-family: roboto arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.toolip-suscibers{
+    font-family: roboto arial;
+    font-size: 12px;
+}
+
